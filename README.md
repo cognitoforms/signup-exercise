@@ -1,5 +1,6 @@
+# Cognito Forms Technical Exercise
 ## Overview
-You are tasked with completing the implementation of the `SignUp.vue` component. Below you will find the requirements for the page.
+You are tasked with completing the implementation of the `SignUp.vue` component and associated code modules. Below you will find the requirements for the page.
 
 ## User Interface Requirements
 1. The name input should be automatically focused when loading the page
@@ -16,13 +17,13 @@ You are tasked with completing the implementation of the `SignUp.vue` component.
   - required
   - must be at least 3 characters
   - must consist of only letters and whitespace
-- email
+- email (see `src/validators.js`)
   - required
   - must be formatted as an email address
   - the domain must consist of at least 2 parts
     - invalid: `test@test`
     - valid: `test@test.test`
-- password
+- password (see `src/validators.js`)
   - required
   - must be at least 11 characters
   - must contain at least one of each of the following character groups:
@@ -31,5 +32,8 @@ You are tasked with completing the implementation of the `SignUp.vue` component.
     - numbers
     - special characters
 - confirm password field must match the value of the password field
+
+## Codesandbox Setup
+You can [open this repository in CodeSandbox](https://codesandbox.io/s/github/cognitoforms/signup-exercise) and click the __Fork__ button in the top right corner. From there you can edit files and see how your output is progressing.
 
 ## [Vue Documentation](https://v2.vuejs.org/v2/guide/)
